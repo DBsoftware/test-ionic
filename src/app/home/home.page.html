@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Weird Game
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,18 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Weird Game</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="container" style="background-color: lightseagreen;" >
+      <svg  #Canvas width="100vw" height="100vh" 
+         version="1.1"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink" [attr.data-goal]="0">
+         <rect x="40%" y="90%" [attr.data-goal]="1" width="20%" height="20%" fill="white" stroke="black" />
+        <circle [attr.cy]="circle.y" [attr.cx]="circle.x"
+         [attr.fill]="circle.fill" stroke="black"  r="22" (click)="presentModal($event,circle)" />
+      </svg>
   </div>
 </ion-content>

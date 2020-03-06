@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-icon slot="icon-only" name="close-circle-outline" (click)="dismiss()"></ion-icon>
+    </ion-buttons>
+    <ion-title>modal</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">modal</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container" >
+      <h1>{{circle.fill == 'blue'? 'Anotación en pos:': 'Nada en:'}}</h1>
+      <h1>Posición x: {{circle.x}}</h1>
+      <h1>Posición y: {{circle.y}}</h1>
+  </div>
+</ion-content>
